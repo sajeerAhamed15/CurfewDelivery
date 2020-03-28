@@ -13,6 +13,7 @@
             android:id="@+id/listview"/>
 
         <Button
+            android:drawableRight="@drawable/ic_arrow_forward"
             android:textColor="@color/icons"
             android:backgroundTint="@color/colorAccent"
             android:text="Proceed"

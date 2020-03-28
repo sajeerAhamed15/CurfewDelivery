@@ -137,7 +137,7 @@ public abstract class PermissionUtils {
             mFinishActivity = arguments.getBoolean(ARGUMENT_FINISH_ACTIVITY);
 
             return new AlertDialog.Builder(getActivity())
-                    .setMessage(R.string.permission_rationale_location)
+                    .setMessage(R.string.permission_required_toast)
                     .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {

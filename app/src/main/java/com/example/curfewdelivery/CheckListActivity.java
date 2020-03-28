@@ -7,6 +7,9 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.example.curfewdelivery.databinding.ActivityCheckListBinding;
@@ -65,11 +68,42 @@ public class CheckListActivity extends AppCompatActivity {
 
     private ArrayList<String> fetchAllItems() {
         ArrayList<String> allItems = new ArrayList<>();
-        allItems.add("Sugar");
         allItems.add("Rice");
         allItems.add("Dhal");
-        allItems.add("Wheat");
+        allItems.add("Potato");
+        allItems.add("Big onion");
+        allItems.add("Sugar");
+        allItems.add("Milk powder");
+        allItems.add("Tea leaves");
+        allItems.add("Vegetable Oil");
+        allItems.add("Flour");
+        allItems.add("Coconuts");
+        allItems.add("Fish");
+        allItems.add("Chicken");
+        allItems.add("Noodles");
+        allItems.add("Vegetables");
+        allItems.add("Chillies/Spices");
         return allItems;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.settings, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_settings:
+
+                break;
+            default:
+                break;
+        }
+
+        return true;
     }
 
     @Override
