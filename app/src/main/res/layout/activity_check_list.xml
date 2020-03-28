@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".CheckListActivity">
+
+        <ListView
+            android:layout_above="@+id/proceedBut"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listview"/>
+
+        <Button
+            android:textColor="@color/icons"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Proceed"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/proceedBut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</layout>

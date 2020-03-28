@@ -1,0 +1,2 @@
+rootProject.name='CurfewDelivery'
+include ':app'
